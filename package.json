@@ -1,0 +1,42 @@
+{
+  "name": "contract_management_backend",
+  "version": "0.1.0",
+  "description": "iBUS Contract Management System backend: maker-checker approval for contract documents.",
+  "private": true,
+  "engines": {
+    "node": ">=26.12.1 <27",
+    "npm": ">=11.20.0 <12"
+  },
+  "packageManager": "npm@11.20.0",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "migrate": "node scripts/migrate.cjs",
+    "migrate:status": "node scripts/migrate.cjs --status",
+    "test": "node --test \"tests/*.test.js\""
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "3.1158.0",
+    "@aws-sdk/s3-request-presigner": "3.1158.0",
+    "axios": "1.21.0",
+    "bcrypt": "6.0.0",
+    "cookie-parser": "1.4.6",
+    "cors": "2.8.5",
+    "dotenv": "18.0.9",
+    "express": "5.3.0",
+    "express-rate-limit": "8.7.1",
+    "helmet": "8.2.0",
+    "jsonwebtoken": "9.0.2",
+    "multer": "2.5.0",
+    "node-cron": "4.2.1",
+    "pdfkit": "0.20.2",
+    "pg": "8.16.3",
+    "uuid": "14.0.3",
+    "winston": "3.17.0",
+    "winston-daily-rotate-file": "5.0.0",
+    "zod": "4.6.7"
+  },
+  "license": "UNLICENSED"
+}
